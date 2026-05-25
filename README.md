@@ -1,11 +1,3 @@
-# 🍽️ Cookverse
+# Cookverse
 
-Welcome to Cookverse! This shooter follows Chef Benedict Wellington's dream to run the best restaurant in the world! Explore new dimensions and hunt bizarre creatures for exotic meats that Earth has never seen before!
-
-## Contributors
-
-- **Yasir Yılmazçoban**
-- **John Henry Friesenhahn**
-- **Judy Liu**
-- **AJ Komolafe**
-- **Thomas Masha**
+Cookverse is a cooking combat game where you defeat enemies and use them as ingredients to cook up recipes that make you stronger! Will you be able to earn your Michelini stars and defeat the evil corporate restaurant owner, Waddle QuackDonald?
