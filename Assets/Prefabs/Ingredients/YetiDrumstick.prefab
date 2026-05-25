@@ -1,0 +1,275 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2444061934136964041
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8501692464528522965}
+  - component: {fileID: 5814127926277621932}
+  - component: {fileID: 5278088429593523794}
+  - component: {fileID: 5076401932632648552}
+  - component: {fileID: 511600146165470020}
+  m_Layer: 6
+  m_Name: YetiDrumstick
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8501692464528522965
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2444061934136964041}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -26.93795, y: -2.428, z: -19.481}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1001227675409483590}
+  - {fileID: 1483090268477925281}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &5814127926277621932
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2444061934136964041}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 2
+--- !u!114 &5278088429593523794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2444061934136964041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65547fb4d6e3a45d08bb428a4eb61dc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KitchenIngredientController
+  ingredientType: 7
+  rawForm: {fileID: 2296604986953923867}
+  choppedForm: {fileID: 0}
+  cookedVisualMode: 0
+  cookedMaterial: {fileID: 2100000, guid: de44a84f407414d0cb4175f59e7b9c0d, type: 2}
+  burntMaterial: {fileID: 2100000, guid: 11914f65ec8164ff9bf7f1f25034c93f, type: 2}
+  cookedForm: {fileID: 481537613633871356}
+  kitchenCamera: {fileID: 0}
+  interactLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  dragSurfaceLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  surfaceRayDistance: 1000
+  useFixedDragY: 1
+  fixedDragY: 1.8
+  hoverYOffset: 0.01
+  rb: {fileID: 5814127926277621932}
+  snapSphereCastRadius: 0.25
+  slotSearchRadius: 2
+  hideDraggedVisualsInSnapRange: 1
+  cookLevel: 0
+--- !u!114 &5076401932632648552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2444061934136964041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f001fc1427f09404689c7a8823acd93b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemPickup
+  itemData: {fileID: 11400000, guid: 5106e4e274a379445949b9d16b675858, type: 2}
+  pickupSound: {fileID: 8300000, guid: 86b2295f9548a2b4b9b73fef31bb3ec2, type: 3}
+  pickupSoundVolume: 1
+--- !u!65 &511600146165470020
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2444061934136964041}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.30794334, y: 0.049752235, z: 0.2}
+  m_Center: {x: -0.001917839, y: 0.012983322, z: 0}
+--- !u!1001 &2231514704148868809
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8501692464528522965}
+    m_Modifications:
+    - target: {fileID: 1374439601150110095, guid: cd7e217f93d36d24c94a7b4d42b17915, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1374439601150110095, guid: cd7e217f93d36d24c94a7b4d42b17915, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1374439601150110095, guid: cd7e217f93d36d24c94a7b4d42b17915, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1374439601150110095, guid: cd7e217f93d36d24c94a7b4d42b17915, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1374439601150110095, guid: cd7e217f93d36d24c94a7b4d42b17915, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1374439601150110095, guid: cd7e217f93d36d24c94a7b4d42b17915, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1374439601150110095, guid: cd7e217f93d36d24c94a7b4d42b17915, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1374439601150110095, guid: cd7e217f93d36d24c94a7b4d42b17915, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1374439601150110095, guid: cd7e217f93d36d24c94a7b4d42b17915, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1374439601150110095, guid: cd7e217f93d36d24c94a7b4d42b17915, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1754483164181984053, guid: cd7e217f93d36d24c94a7b4d42b17915, type: 3}
+      propertyPath: m_Name
+      value: Food_Seared Chicken
+      objectReference: {fileID: 0}
+    - target: {fileID: 1754483164181984053, guid: cd7e217f93d36d24c94a7b4d42b17915, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cd7e217f93d36d24c94a7b4d42b17915, type: 3}
+--- !u!1 &481537613633871356 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1754483164181984053, guid: cd7e217f93d36d24c94a7b4d42b17915, type: 3}
+  m_PrefabInstance: {fileID: 2231514704148868809}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1001227675409483590 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1374439601150110095, guid: cd7e217f93d36d24c94a7b4d42b17915, type: 3}
+  m_PrefabInstance: {fileID: 2231514704148868809}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4876094387165049941
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8501692464528522965}
+    m_Modifications:
+    - target: {fileID: 6286920348647068660, guid: 6c7cc25dd8fd22d4cbdce0160cee8b66, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6286920348647068660, guid: 6c7cc25dd8fd22d4cbdce0160cee8b66, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6286920348647068660, guid: 6c7cc25dd8fd22d4cbdce0160cee8b66, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6286920348647068660, guid: 6c7cc25dd8fd22d4cbdce0160cee8b66, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6286920348647068660, guid: 6c7cc25dd8fd22d4cbdce0160cee8b66, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6286920348647068660, guid: 6c7cc25dd8fd22d4cbdce0160cee8b66, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6286920348647068660, guid: 6c7cc25dd8fd22d4cbdce0160cee8b66, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6286920348647068660, guid: 6c7cc25dd8fd22d4cbdce0160cee8b66, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6286920348647068660, guid: 6c7cc25dd8fd22d4cbdce0160cee8b66, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6286920348647068660, guid: 6c7cc25dd8fd22d4cbdce0160cee8b66, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6662072979905104206, guid: 6c7cc25dd8fd22d4cbdce0160cee8b66, type: 3}
+      propertyPath: m_Name
+      value: Food_Chicken Breast
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6c7cc25dd8fd22d4cbdce0160cee8b66, type: 3}
+--- !u!4 &1483090268477925281 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6286920348647068660, guid: 6c7cc25dd8fd22d4cbdce0160cee8b66, type: 3}
+  m_PrefabInstance: {fileID: 4876094387165049941}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2296604986953923867 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6662072979905104206, guid: 6c7cc25dd8fd22d4cbdce0160cee8b66, type: 3}
+  m_PrefabInstance: {fileID: 4876094387165049941}
+  m_PrefabAsset: {fileID: 0}
